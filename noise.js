@@ -7,8 +7,6 @@ $(document).ready( function() {
 
     if (choices.includes(note) === true) {
       var element = "#" + note + "Audio";
-      // var audio = document.getElementById(element);
-      alert("PLAYING " + element);
       $(element)[0].play();
     }
   });
@@ -16,12 +14,18 @@ $(document).ready( function() {
   $("body").keydown(function(event){
     if (choices.includes(event.key) === true) {
       var element = "#" + event.key + "Audio";
-      // var audio = document.getElementById(element);
-      // alert("PLAYING " + element);
       $(element)[0].play();
    }
   });
 });
+
+
+//Extra stuff
+// var audio = document.getElementById(element);
+// alert("PLAYING " + element);
+
+// var audio = document.getElementById(element);
+// alert("PLAYING " + element);
 
 
 //Past solution
