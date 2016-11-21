@@ -8,7 +8,7 @@ $(document).ready( function() {
     if (choices.includes(note) === true) {
       var element = note + "Audio";
       var audio = document.getElementById(element);
-      alert("PLAYING " + element);
+      // alert("PLAYING " + element);
       audio.play();
     }
   });
@@ -17,7 +17,7 @@ $(document).ready( function() {
     if (choices.includes(event.key) === true) {
       var element = event.key + "Audio";
       var audio = document.getElementById(element);
-      alert("PLAYING " + element);
+      // alert("PLAYING " + element);
       audio.play();
    }
   });
