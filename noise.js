@@ -7,12 +7,14 @@ $(document).ready( function() {
 
     var element = "#" + note + "Audio";
     $(element)[0].play();
+    $(element)[0].currentTime = 0;
   });
   //For keys
   $("body").keydown(function(event){
     if (choices.includes(event.key) === true) {
       var element = "#" + event.key + "Audio";
       $(element)[0].play();
+      $(element)[0].currentTime = 0;
    }
   });
 });
