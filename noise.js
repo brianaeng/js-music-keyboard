@@ -5,10 +5,8 @@ $(document).ready( function() {
   $("button").click(function(){
     var note = ($(this).attr("class")).slice(-1);
 
-    if (choices.includes(note) === true) {
-      var element = "#" + note + "Audio";
-      $(element)[0].play();
-    }
+    var element = "#" + note + "Audio";
+    $(element)[0].play();
   });
   //For keys
   $("body").keydown(function(event){
