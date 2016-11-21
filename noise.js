@@ -6,19 +6,19 @@ $(document).ready( function() {
     var note = ($(this).attr("class")).slice(-1);
 
     if (choices.includes(note) === true) {
-      var element = note + "Audio";
-      var audio = document.getElementById(element);
-      // alert("PLAYING " + element);
-      audio.play();
+      var element = "#" + note + "Audio";
+      // var audio = document.getElementById(element);
+      alert("PLAYING " + element);
+      $(element)[0].play();
     }
   });
   //For keys
   $("body").keydown(function(event){
     if (choices.includes(event.key) === true) {
-      var element = event.key + "Audio";
-      var audio = document.getElementById(element);
+      var element = "#" + event.key + "Audio";
+      // var audio = document.getElementById(element);
       // alert("PLAYING " + element);
-      audio.play();
+      $(element)[0].play();
    }
   });
 });
